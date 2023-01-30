@@ -14,7 +14,7 @@ function Createdata() {
       try {
         setLoading(true);
         const data = await axios.get(
-          `http://localhost:3000/scrapData/create/${values.search}`
+          `https://web-code.onrender.com/scrapData/create/${values.search}`
         );
         // setUserdata(data.data);
         console.log(data.data.message);

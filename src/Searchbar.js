@@ -31,7 +31,7 @@ function Searchbar() {
       try {
        setLoading(true);
         const data = await axios.get(
-          `http://localhost:3000/product/display/${values.search}`
+          `https://web-code.onrender.com/product/display/${values.search}`
         );
         setProductdata(data.data);
        setLoading(false);
